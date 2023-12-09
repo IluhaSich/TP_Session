@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.session.DeputyMain">
+   <children>
+      <TableView fx:id="t_sturdent_grade" layoutX="287.0" layoutY="14.0" onMouseClicked="#getSelected" prefHeight="367.0" prefWidth="299.0">
+        <columns>
+            <TableColumn fx:id="exam_id" prefWidth="75.0" text="exam_id" />
+          <TableColumn fx:id="id_student" prefWidth="78.0" text="student_id" />
+          <TableColumn fx:id="student_grade" minWidth="0.0" prefWidth="145.0" text="grade" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_pass" layoutX="178.0" layoutY="125.0" mnemonicParsing="false" onAction="#put_pass_true" text="Зачтено" textFill="#1ea81a">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Button>
+      <Button fx:id="btn_back" layoutX="21.0" layoutY="349.0" mnemonicParsing="false" onAction="#goBack" prefHeight="32.0" prefWidth="61.0" text="Назад" />
+      <Button fx:id="btn_donotpass" layoutX="178.0" layoutY="188.0" mnemonicParsing="false" onAction="#put_pass_false" text="Незачет" textFill="RED" />
+   </children>
+</AnchorPane>
